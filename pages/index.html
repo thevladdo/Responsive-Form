@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LTCBWO</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon.ico"
+      />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/index_style.css" />
+    <script defer src="../js/validator.js" type="text/javascript"></script>
+    <script defer src="../js/focus.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="title-div">
+        <h1 class="title">
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p class="description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form-div">
+        <button
+          style="border: none; cursor: pointer"
+          class="free-trial"
+          id="free-trial"
+          onclick="focusOn()"
+        >
+          <strong>Try it free 7 days</strong> then $20/mo thereafter
+        </button>
+        <form class="register-form" id="form" method="get" action="">
+          <input
+            required
+            pattern="[a-zA-Z]{2,20}"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First Name"
+          />
+          <input
+            required
+            pattern="[a-zA-Z]{2,20}"
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Last Name"
+          />
+          <input
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="Email Address"
+          />
+          <input
+            required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,50}$"
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="new-password"
+            placeholder="Password"
+          />
+          <button class="submitForm">CLAIM YOUR FREE TRIAL</button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <a class="terms-link" href="terms.html"
+              ><strong>Terms and Services</strong></a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <a class="terms-link" href="terms.html">
+        <strong>Terms and Services</strong>
+      </a>
+      <p class="footer-message">
+        <strong
+          >Ready to start?</strong> </br> Enter your email to create or restart your
+          membership.</strong
+        >
+      </p>
+    </footer>
+  </body>
+</html>
