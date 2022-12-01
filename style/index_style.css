@@ -30,6 +30,7 @@ body {
 
 .content {
   background-image: url("../images/bg-intro-mobile.png");
+  background-attachment: fixed;
   background-color: var(--red);
   display: flex;
   flex-direction: column;
@@ -176,6 +177,8 @@ input:focus {
 @media screen and (min-width: 500px) {
   .content {
     margin-bottom: 144px;
+    height: 100vh;
+    min-height: 1200px;
   }
 
   .title-div {
@@ -239,6 +242,7 @@ input:focus {
   .content {
     flex-direction: row;
     height: 100vh;
+    min-height: 100vh;
   }
 
   .title-div {
@@ -272,21 +276,23 @@ input:focus {
     font-size: 1rem;
   }
 
-  .free-trial:hover {
-    background-color: var(--high-blue);
-    box-shadow: 0px 8px 0px 0 hsla(0, 0%, 0%, 0.522);
-  }
+  @media (hover: hover) {
+    .free-trial:hover {
+      background-color: var(--high-blue);
+      box-shadow: 0px 8px 0px 0 hsla(0, 0%, 0%, 0.522);
+    }
 
-  input:hover {
-    box-shadow: 0px 8px 10px 0 hsla(32, 30%, 31%, 0.375);
-  }
+    input:hover {
+      box-shadow: 0px 8px 10px 0 hsla(32, 30%, 31%, 0.375);
+    }
 
-  .submitForm:hover {
-    background-color: hsl(154, 100%, 64%);
-    color: rgba(0, 0, 0, 0.665);
-  }
+    .submitForm:hover {
+      background-color: hsl(154, 100%, 64%);
+      color: rgba(0, 0, 0, 0.665);
+    }
 
-  .terms-link:hover {
-    text-decoration: underline;
+    .terms-link:hover {
+      text-decoration: underline;
+    }
   }
 }

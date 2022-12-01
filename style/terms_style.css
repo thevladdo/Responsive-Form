@@ -34,8 +34,21 @@ body {
   background-color: var(--red);
 }
 
+#bar {
+  width: 1%;
+  height: 6px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: var(--green);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition-duration: 0ms !important;
+}
+
 .main-content {
   background-image: url("../images/bg-intro-mobile.png");
+  background-attachment: fixed;
   background-color: var(--red);
   position: relative;
   top: 0;
@@ -240,33 +253,41 @@ i {
 }
 
 @media screen and (min-width: 1200px) {
+  #bar {
+    height: 6px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+
   .content {
     padding-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
   }
 
-  .top:hover {
-    cursor: pointer;
-    background-color: var(--green);
-    translate: 0 -5px;
-  }
-
-  .top:hover > i {
-    color: white;
-    translate: 0 -5px;
-  }
-
   .home-a {
     text-decoration: none;
   }
 
-  .home-a:hover {
-    font-size: 1.2rem;
-    text-decoration: underline;
-  }
-
   .footer {
     padding-top: 40px;
+  }
+
+  @media (hover: hover) {
+    .top:hover {
+      cursor: pointer;
+      background-color: var(--green);
+      translate: 0 -5px;
+    }
+
+    .top:hover > i {
+      color: white;
+      translate: 0 -5px;
+    }
+
+    .home-a:hover {
+      font-size: 1.2rem;
+      text-decoration: underline;
+    }
   }
 }
